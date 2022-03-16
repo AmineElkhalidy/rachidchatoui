@@ -105,6 +105,7 @@ body {
   color: var(--text-color);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
+  direction: ltr;
 }
 
 h1,
@@ -300,7 +301,7 @@ button {
 
 .button__icon {
   font-size: 1.25rem;
-  margin-left: var(--mb-0-5);
+  margin-right: var(--mb-0-5);
   transition: 0.3s;
 }
 
@@ -447,6 +448,7 @@ button {
 .contact__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
 }
 
 .contact__subtitle {
@@ -463,6 +465,8 @@ button {
 .contact__label {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
+  text-align: right;
+  display: block;
 }
 
 .contact__input {
@@ -657,7 +661,7 @@ button {
   }
 
   .change-theme {
-    margin: 0;
+    margin: var(--mb-0-5);
   }
 
   .about__info-wrapper {
