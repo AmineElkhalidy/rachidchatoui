@@ -8,7 +8,7 @@ const PersonInfo = ({
   companiesNumber,
   completedProjectsNumber,
   linkToDocument,
-  linkToPortfolio
+  linkToPortfolio,
 }) => {
   return (
     <div className="about__info-wrapper grid">
@@ -45,11 +45,11 @@ const PersonInfo = ({
           </div>
         </div>
 
-        <div className="about__buttons">
+        {/* <div className="about__buttons">
           <a className="button button--flex" download="" href={linkToDocument}>
             Download CV <i className="ri-download-line button__icon"></i>
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

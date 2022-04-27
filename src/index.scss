@@ -282,8 +282,6 @@ button {
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*==================== HOME ====================*/
-
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
@@ -301,7 +299,7 @@ button {
 
 .button__icon {
   font-size: 1.25rem;
-  margin-right: var(--mb-0-5);
+  margin-left: var(--mb-0-5);
   transition: 0.3s;
 }
 
@@ -317,6 +315,141 @@ button {
 
 .button--white:hover {
   background-color: white;
+}
+
+/*==================== HOME ====================*/
+.home__container {
+  row-gap: 3rem;
+}
+
+.home__title {
+  margin-bottom: var(--mb-1-5);
+}
+
+.home__description {
+  line-height: 1.5;
+  margin-bottom: var(--mb-0-5);
+}
+
+.home__image-container {
+  width: 295px;
+  height: 295px;
+  border-radius: 5%;
+
+  background-color: var(--first-color-second);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  justify-self: center;
+  overflow: hidden;
+}
+
+/*==================== CLARIFICATION ====================*/
+.clarification__container {
+  row-gap: 3rem;
+}
+
+.clarification__title {
+  text-transform: capitalize;
+  margin-bottom: var(--mb-1-5);
+}
+
+.clarification__description {
+  line-height: 1.5;
+}
+
+.clarification__images {
+  justify-self: center;
+  border-radius: 5%;
+
+  overflow: hidden;
+}
+
+.clarification__image {
+  width: 295px;
+  height: 295px;
+}
+
+.clarification__row {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.clarification__row img {
+  height: 6.2rem;
+}
+
+/*==================== PRODUCTS ====================*/
+.products__container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  background-color: var(--first-color-second);
+  color: white;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-0.75rem);
+  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.25);
+}
+
+.product__img {
+  width: 220px;
+  margin-top: var(--mb-0-5);
+  margin-bottom: var(--mb-1);
+  filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.2));
+}
+
+.product__name,
+.product__price {
+  font-size: var(--h2-font-size);
+  letter-spacing: 0.1rem;
+  font-weight: var(--font-semi-bold);
+}
+
+.product__price {
+  margin-bottom: var(--mb-2);
+}
+
+.products__action {
+  text-align: center;
+}
+
+/*==================== STORY ====================*/
+.story__container {
+  row-gap: 3rem;
+}
+
+.story__title {
+  margin-bottom: var(--mb-1-5);
+}
+
+.story__description {
+  line-height: 1.5;
+}
+
+.story__img {
+  border-radius: 5%;
+}
+
+/*==================== GALLERY ====================*/
+.gallery__images {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 /*==================== ABOUT ====================*/
@@ -373,8 +506,10 @@ button {
 
 .about__footer-description {
   text-align: center;
-  margin-top: var(--mb-1);
+  margin-top: var(--mb-2-5);
   color: var(--title-color);
+
+  padding: 0 2rem;
 }
 
 .about__portfolio-link {
@@ -389,15 +524,6 @@ button {
 .portfolio__link:hover {
   color: var(--first-color-alt);
 }
-/*==================== SKILLS ====================*/
-
-/*==================== QUALIFICATION ====================*/
-
-/*==================== SERVICES ====================*/
-
-/* Active Modal */
-
-/*==================== PORTFOLIO ====================*/
 
 /*==================== PROJECT IN MIND ====================*/
 .project {
@@ -416,6 +542,7 @@ button {
 
 .project__description {
   margin-bottom: var(--mb-1-5);
+  line-height: 1.5;
 }
 
 .project__title,
@@ -465,7 +592,6 @@ button {
 .contact__label {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
-  text-align: right;
   display: block;
 }
 

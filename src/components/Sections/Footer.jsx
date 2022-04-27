@@ -7,8 +7,8 @@ const Footer = () => {
       <div className="footer__bg">
         <div className="footer__container grid container">
           <div>
-            <h1 className="footer__title">Rachid</h1>
-            <span className="footer__subtitle">Business Man</span>
+            <h1 className="footer__title">R3A</h1>
+            <span className="footer__subtitle">Products Business</span>
           </div>
 
           <ul className="footer__links">
@@ -45,7 +45,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="footer__copy">All rights reserved © 2022, Amine Elkhalidy.</p>
+        <p className="footer__copy">
+          All rights reserved © 2022, Amine Elkhalidy.
+        </p>
       </div>
     </footer>
   );

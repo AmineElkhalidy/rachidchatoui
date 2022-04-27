@@ -87,7 +87,7 @@ const Header = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <Link to="/" className="nav__logo">
-          <img src={Logo} alt="Logo Image" /> Rachid
+          <img src={Logo} alt="Logo Image" /> R3A
         </Link>
 
         <div className="nav__menu" id="nav-menu">

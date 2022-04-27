@@ -1,11 +1,12 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+
 const ContactSection = () => {
   const [state, handleSubmit] = useForm("mjvlwowe");
 
   return (
     <section className="contact section">
-      <h2 className="section__title">تواصل معنا</h2>
+      <h2 className="section__title">Contact us</h2>
       <span className="section__subtitle">Get in touch</span>
 
       <div className="contact__container container grid">
@@ -14,8 +15,14 @@ const ContactSection = () => {
             <i className="ri-phone-line contact__icon"></i>
 
             <div>
-              <h3 className="contact__title">الهاتف</h3>
-              <span className="contact__subtitle">+212611154307</span>
+              <h3 className="contact__title">Call us</h3>
+              <span className="contact__subtitle">
+                +212611154307 &rarr; Amine
+              </span>{" "}
+              <br />
+              <span className="contact__subtitle">
+                +212622334707 &rarr; Rachid
+              </span>
             </div>
           </div>
 
@@ -23,7 +30,7 @@ const ContactSection = () => {
             <i className="ri-mail-line contact__icon"></i>
 
             <div>
-              <h3 className="contact__title">البريد الالكتروني</h3>
+              <h3 className="contact__title">Email</h3>
               <span className="contact__subtitle">
                 elkhalidyamine.a@gmail.com
               </span>
@@ -34,9 +41,9 @@ const ContactSection = () => {
             <i className="ri-map-pin-line contact__icon"></i>
 
             <div>
-              <h3 className="contact__title">الموقع</h3>
+              <h3 className="contact__title">Location</h3>
               <span className="contact__subtitle">
-                دوار اولاد خالد, جماعة سيدي عيسى بن سليمان - قلعة السراغنة
+                Dr od khaled sidi aissa ben slimane - Elkelaa des sraghna
               </span>
             </div>
           </div>
@@ -50,7 +57,7 @@ const ContactSection = () => {
           <div className="contact__inputs grid">
             <div className="contact__content">
               <label htmlFor="name" className="contact__label">
-                اسمك
+                Your name
               </label>
               <input
                 id="name"
@@ -68,7 +75,7 @@ const ContactSection = () => {
 
             <div lang="ar" className="contact__content">
               <label htmlFor="phoneNumber" className="contact__label">
-                رقم هاتفك
+                Phone number
               </label>
               <input
                 id="phoneNumber"
@@ -87,7 +94,7 @@ const ContactSection = () => {
 
           <div className="contact__content">
             <label htmlFor="email" className="contact__label">
-              بريدك الالكتروني
+              Email address
             </label>
             <input
               id="email"
@@ -104,7 +111,7 @@ const ContactSection = () => {
 
           <div className="contact__content">
             <label htmlFor="message" className="contact__label">
-              رسالتك
+              Your message
             </label>
             <textarea
               id="message"
@@ -128,7 +135,7 @@ const ContactSection = () => {
               type="submit"
               disabled={state.submitting}
             >
-              <i className="ri-send-plane-line button__icon"></i> ارسال الرسالة
+              Send message <i className="ri-send-plane-line button__icon"></i>
             </a>
           </div>
         </form>
