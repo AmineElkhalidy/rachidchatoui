@@ -295,6 +295,9 @@ const HomeSection = () => {
           </div>
         </div>
       </section>
+
+      <section className="nothing section"></section>
+
       <Footer />
     </>
   );
