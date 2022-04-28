@@ -89,20 +89,6 @@ const HomeSection = () => {
 
           <article className="product">
             <img
-              src={Product1}
-              alt="The first product"
-              className="product__img"
-            />
-            <span className="product__name">Container</span>
-            <span className="product__price">$50</span>
-
-            <a href="#" className="button button--white">
-              Contact Us
-            </a>
-          </article>
-
-          <article className="product">
-            <img
               src={Product3}
               alt="The first product"
               className="product__img"
