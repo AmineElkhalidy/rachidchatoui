@@ -68,54 +68,54 @@ const HomeSection = () => {
         </div>
       </section>
 
-      <section className="products section">
-        <h2 className="section__title products__title">Our Products</h2>
+      <section className="featured__section section">
+        <h2 className="section__title">Our Products</h2>
         <span className="section__subtitle">Discover</span>
 
-        <div className="products__container container grid">
-          <article className="product">
+        <div className="featured__container container grid">
+          <article className="featured">
             <img
               src={Product4}
               alt="The first product"
-              className="product__img"
+              className="featured__img"
             />
-            <span className="product__name">Container</span>
-            <span className="product__price">$50</span>
+            <span className="featured__name">Container</span>
+            <span className="featured__price">$50</span>
 
             <a href="#" className="button button--white">
               Contact Us
             </a>
           </article>
 
-          <article className="product">
+          <article className="featured">
             <img
               src={Product3}
               alt="The first product"
-              className="product__img"
+              className="featured__img"
             />
-            <span className="product__name">Closet</span>
-            <span className="product__price">$50</span>
+            <span className="featured__name">Closet</span>
+            <span className="featured__price">$50</span>
 
             <a href="#" className="button button--white">
               Contact Us
             </a>
           </article>
 
-          <article className="product">
+          <article className="featured">
             <img
               src={Product2}
               alt="The first product"
-              className="product__img"
+              className="featured__img"
             />
-            <span className="product__name">Table</span>
-            <span className="product__price">$50</span>
+            <span className="featured__name">Table</span>
+            <span className="featured__price">$50</span>
 
             <a href="#" className="button button--white">
               Contact Us
             </a>
           </article>
 
-          <div className="products__action">
+          <div className="featured__action">
             <Link to="products" className="button">
               Explore more
             </Link>
@@ -294,10 +294,6 @@ const HomeSection = () => {
             />
           </div>
         </div>
-      </section>
-
-      <section className="nothing section">
-        <div className="nothing__container container"></div>
       </section>
 
       <Footer />
