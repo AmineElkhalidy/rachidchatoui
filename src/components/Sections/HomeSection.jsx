@@ -173,7 +173,7 @@ const HomeSection = () => {
 
             <div className="member__data">
               <h3 className="member__name">Rachid Echatoui</h3>
-              <p className="member__role">The Bus</p>
+              <p className="member__role">The Boss</p>
             </div>
           </div>
 
@@ -195,7 +195,7 @@ const HomeSection = () => {
 
             <div className="member__data">
               <h3 className="member__name">Ahmed Elfahimy</h3>
-              <p className="member__role">Bus assistant</p>
+              <p className="member__role">Boss assistant</p>
             </div>
           </div>
 
@@ -206,7 +206,7 @@ const HomeSection = () => {
 
             <div className="member__data">
               <h3 className="member__name">Ayoub Elfqih</h3>
-              <p className="member__role">Bus assistant</p>
+              <p className="member__role">Boss assistant</p>
             </div>
           </div>
         </div>
