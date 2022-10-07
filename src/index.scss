@@ -424,6 +424,11 @@ button {
   justify-self: center;
 }
 
+.signature {
+  display: none;
+  margin-top: var(--mb-3);
+}
+
 /*==================== GALLERY ====================*/
 .gallery__description {
   margin-bottom: var(--mb-1-5);
@@ -929,5 +934,10 @@ button {
 
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .signature {
+    display: block;
+    text-align: initial;
   }
 }

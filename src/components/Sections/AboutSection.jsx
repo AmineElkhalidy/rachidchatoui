@@ -4,6 +4,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import Amine from "../../assets/images/Amine.png";
+import Signature from "../../assets/signature.svg";
 
 const AboutSection = () => {
   return (
@@ -34,6 +35,10 @@ const AboutSection = () => {
                 over 2 decades working with clients and we have also delivering
                 service as well
               </p>
+
+              <div className="signature">
+                <img src={Signature} alt="Signature" />
+              </div>
             </div>
 
             <img
