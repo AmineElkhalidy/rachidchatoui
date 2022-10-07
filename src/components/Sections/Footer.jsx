@@ -34,11 +34,19 @@ const Footer = () => {
           </ul>
 
           <div className="footer__socials">
-            <a href="#" target="_blank" className="footer__social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100080460057898"
+              target="_blank"
+              className="footer__social"
+            >
               <i class="ri-facebook-fill"></i>
             </a>
 
-            <a href="#" target="_blank" className="footer__social">
+            <a
+              href="tel:+212622334707"
+              target="_blank"
+              className="footer__social"
+            >
               <i class="ri-whatsapp-line"></i>
             </a>
           </div>

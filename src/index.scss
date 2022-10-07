@@ -9,7 +9,7 @@
   --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
-  --first-color: hsl(250, 69%, 61%);
+  --first-color: #6e57e0;
   --first-color-second: hsl(250, 69%, 61%);
   --first-color-alt: hsl(250, 57%, 53%);
   --first-color-lighter: hsl(250, 92%, 85%);
@@ -344,44 +344,6 @@ button {
 
   justify-self: center;
   overflow: hidden;
-}
-
-/*==================== CLARIFICATION ====================*/
-.clarification__container {
-  row-gap: 3rem;
-}
-
-.clarification__title {
-  text-transform: capitalize;
-  margin-bottom: var(--mb-1-5);
-}
-
-.clarification__description {
-  line-height: 1.5;
-}
-
-.clarification__images {
-  justify-self: center;
-  border-radius: 5%;
-
-  overflow: hidden;
-}
-
-.clarification__image {
-  width: 295px;
-  height: 295px;
-}
-
-.clarification__row {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  overflow: hidden;
-}
-
-.clarification__row img {
-  height: 6.2rem;
 }
 
 /*==================== PRODUCTS ====================*/

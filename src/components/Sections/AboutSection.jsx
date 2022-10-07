@@ -25,12 +25,14 @@ const AboutSection = () => {
           <div className="story__container grid">
             <div className="story__data">
               <h2 className="story__title text__initial">
-                What is Qassab 🌱 ?
+                What's our business for?
               </h2>
               <p className="story__description text__initial">
                 We are starting startup, specialized in making whatever kind of
-                products that can came out of ELQASSAB, We spent over 2 decades
-                working with clients and we have also delivering service as well
+                products that can came out of{" "}
+                <span style={{ color: "#6e57e0" }}>ELQASSAB</span>, We spent
+                over 2 decades working with clients and we have also delivering
+                service as well
               </p>
             </div>
 
@@ -153,7 +155,9 @@ const AboutSection = () => {
               <div className="project__bg">
                 <div className="project__container container grid">
                   <div className="project__data">
-                    <h2 className="project__title">You have a new project ?</h2>
+                    <h2 className="project__title">
+                      Have a project in your mind ?
+                    </h2>
                     <p className="project__description">
                       You want to build a website or a mobile application to let
                       the world aware of what you offer, contact me and I will
@@ -168,8 +172,8 @@ const AboutSection = () => {
                       rel="noreferrer noopener"
                       className="button button--flex button--white"
                     >
-                      Contact Me
-                      <i className="ri-send-plane-line project__icon button__icon"></i>
+                      Visit my portfolio
+                      <i class="ri-external-link-line project__icon button__icon"></i>
                     </a>
                   </div>
 
