@@ -385,49 +385,58 @@ button {
 }
 
 /*==================== PRODUCTS ====================*/
-.featured__container {
+.products__container {
   row-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.featured {
+.product {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
   border-radius: 0.5rem;
-  transition: all 0.3s;
-  background-color: var(--first-color-second);
-  color: white;
+  border: 1px solid var(--first-color);
+  padding: 0.5rem;
   transition: 0.3s;
+  overflow: hidden;
 }
 
-.featured:hover {
-  transform: translateY(-0.75rem);
-  box-shadow: 0 12px 8px rgba(0, 0, 0, 0.25);
+.product__links {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.featured__img {
-  width: 150px;
-  margin-top: var(--mb-0-5);
-  margin-bottom: var(--mb-1);
-  filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.2));
+.product__links div {
+  display: flex;
+  gap: 3rem;
 }
 
-.featured__name,
-.featured__price {
-  font-size: var(--h2-font-size);
-  letter-spacing: 0.1rem;
-  font-weight: var(--font-semi-bold);
+.product__link {
+  font-size: 1.8rem;
 }
 
-.featured__price {
-  margin-bottom: var(--mb-2);
+.product__link i {
+  color: var(--first-color-alt);
 }
 
-.featured__action {
-  text-align: center;
+.product:hover .product__links {
+  display: flex;
+}
+
+.product__img {
+  width: 100%;
+  // filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.2));
 }
 
 /*==================== STORY ====================*/
@@ -586,34 +595,42 @@ button {
 }
 
 /*==================== PROJECT IN MIND ====================*/
-// .project {
-//   text-align: center;
-// }
+.project {
+  text-align: center;
+}
 
-// .project__bg {
-//   background-color: var(--first-color-second);
-//   padding-top: 3rem;
-// }
+.project__bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
 
-// .project__title {
-//   font-size: var(--h2-font-size);
-//   margin-bottom: var(--mb-0-75);
-// }
+.project__container {
+  border-radius: 1rem;
+}
 
-// .project__description {
-//   margin-bottom: var(--mb-1-5);
-//   line-height: 1.5;
-// }
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
 
-// .project__title,
-// .project__description {
-//   color: white;
-// }
+.project__description {
+  margin-bottom: var(--mb-1-5);
+  line-height: 1.5;
 
-// .project__img {
-//   width: 232px;
-//   justify-self: center;
-// }
+  & span {
+    font-size: var(--small-font-size);
+  }
+}
+
+.project__title,
+.project__description {
+  color: white;
+}
+
+.project__img {
+  width: 232px;
+  justify-self: center;
+}
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
@@ -905,7 +922,6 @@ button {
 
   .project__container {
     background-color: var(--first-color-second);
-    border-radius: 1rem;
     padding: 3rem 2.5rem 0;
     grid-template-columns: 1fr max-content;
     column-gap: 3rem;

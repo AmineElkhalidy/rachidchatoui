@@ -3,6 +3,8 @@ import React from "react";
 // MetaTags
 import { Helmet } from "react-helmet";
 
+import Amine from "../../assets/images/Amine.png";
+
 const AboutSection = () => {
   return (
     <>
@@ -32,7 +34,11 @@ const AboutSection = () => {
               </p>
             </div>
 
-            <img src={""} alt="Story image" className="story__img" />
+            <img
+              src="https://www.albawaba.com/sites/default/files/im/Health/HealthBeauty2017/sugarcane-BeFunky-design.jpg"
+              alt="Story image"
+              className="story__img"
+            />
           </div>
 
           <div className="services section">
@@ -70,7 +76,7 @@ const AboutSection = () => {
                 </svg>
                 <h3 className="services__title">Respect The Deadlines</h3>
                 <p className="services__description">
-                  We offer the best products in terms of quality
+                  We make sure to respect the setted deadlines
                 </p>
               </div>
 
@@ -87,7 +93,7 @@ const AboutSection = () => {
                 </svg>
                 <h3 className="services__title">Delivery</h3>
                 <p className="services__description">
-                  We offer the best products in terms of quality
+                  We can deliver anywhere inside Morocco
                 </p>
               </div>
             </div>
@@ -133,15 +139,48 @@ const AboutSection = () => {
 
               <div className="member__card">
                 <div className="member__image">
-                  <img src="" alt="member image" className="member__img" />
+                  <img src={Amine} alt="member image" className="member__img" />
                 </div>
 
                 <div className="member__data">
                   <h3 className="member__name">Amine Elkhalidy</h3>
-                  <p className="member__role">Web developer</p>
+                  <p className="member__role">Software developer</p>
                 </div>
               </div>
             </div>
+
+            <section className="project section">
+              <div className="project__bg">
+                <div className="project__container container grid">
+                  <div className="project__data">
+                    <h2 className="project__title">You have a new project ?</h2>
+                    <p className="project__description">
+                      You want to build a website or a mobile application to let
+                      the world aware of what you offer, contact me and I will
+                      handle the rest.
+                      <br />
+                      <span>Amine Elkhalidy.</span>
+                    </p>
+
+                    <a
+                      href="https://amineelkhalidy.vercel.app"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="button button--flex button--white"
+                    >
+                      Contact Me
+                      <i className="ri-send-plane-line project__icon button__icon"></i>
+                    </a>
+                  </div>
+
+                  <img
+                    className="project__img"
+                    src={Amine}
+                    alt="Amine Elkhalidy"
+                  />
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </section>
