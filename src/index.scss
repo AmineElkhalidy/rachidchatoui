@@ -791,13 +791,22 @@ button {
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .contact__container,
-  .footer__container {
+  .footer__container,
+  .story__container {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .about__info-wrapper,
   .project__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text__initial {
+    text-align: initial;
+  }
+
+  .story__description {
+    padding-inline: 0;
   }
 }
 
