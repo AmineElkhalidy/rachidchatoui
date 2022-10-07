@@ -435,16 +435,22 @@ button {
   row-gap: 3rem;
 }
 
+.story__data {
+  text-align: center;
+}
+
 .story__title {
   margin-bottom: var(--mb-1-5);
 }
 
 .story__description {
-  line-height: 1.5;
+  line-height: 1.7;
+  padding-inline: 1rem;
 }
 
 .story__img {
   border-radius: 5%;
+  justify-self: center;
 }
 
 /*==================== GALLERY ====================*/
@@ -457,19 +463,9 @@ button {
 }
 
 /*==================== TEAM ====================*/
-// .team__container {
-//   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-//   justify-items: center;
-// }
-
 .team__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-items: center;
 }
 
 .member__card {
@@ -513,8 +509,8 @@ button {
 
 /*==================== SERVICES ====================*/
 .services__container {
-  row-gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
 .services__content {
@@ -524,12 +520,13 @@ button {
 .services__img {
   width: 50px;
   height: 50px;
-  fill: var(--first-color-second);
-  margin-bottom: var(--mb-0-25);
+  fill: var(--first-color-alt);
+  margin-bottom: var(--mb-2);
 }
 
 .services__title {
   font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
 }
 
 .services__description {
@@ -589,34 +586,34 @@ button {
 }
 
 /*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
+// .project {
+//   text-align: center;
+// }
 
-.project__bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
+// .project__bg {
+//   background-color: var(--first-color-second);
+//   padding-top: 3rem;
+// }
 
-.project__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
+// .project__title {
+//   font-size: var(--h2-font-size);
+//   margin-bottom: var(--mb-0-75);
+// }
 
-.project__description {
-  margin-bottom: var(--mb-1-5);
-  line-height: 1.5;
-}
+// .project__description {
+//   margin-bottom: var(--mb-1-5);
+//   line-height: 1.5;
+// }
 
-.project__title,
-.project__description {
-  color: white;
-}
+// .project__title,
+// .project__description {
+//   color: white;
+// }
 
-.project__img {
-  width: 232px;
-  justify-self: center;
-}
+// .project__img {
+//   width: 232px;
+//   justify-self: center;
+// }
 
 /*==================== CONTACT ME ====================*/
 .contact__container {

@@ -22,8 +22,10 @@ const AboutSection = () => {
         <div className="about__container container grid">
           <div className="story__container grid">
             <div className="story__data">
-              <h2 className="story__title">What is RA3 ?</h2>
-              <p className="story__description">
+              <h2 className="story__title text__initial">
+                What is Qassab 🌱 ?
+              </h2>
+              <p className="story__description text__initial">
                 We are starting startup, specialized in making whatever kind of
                 products that can came out of ELQASSAB, We spent over 2 decades
                 working with clients and we have also delivering service as well
@@ -91,7 +93,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <section className="team section">
+          <div className="team section">
             <span className="section__subtitle">Presenting</span>
             <h2 className="section__title products__title">Our team members</h2>
 
@@ -104,17 +106,6 @@ const AboutSection = () => {
                 <div className="member__data">
                   <h3 className="member__name">Rachid Echatoui</h3>
                   <p className="member__role">The Boss</p>
-                </div>
-              </div>
-
-              <div className="member__card">
-                <div className="member__image">
-                  <img src="" alt="member image" className="member__img" />
-                </div>
-
-                <div className="member__data">
-                  <h3 className="member__name">Amine Elkhalidy</h3>
-                  <p className="member__role">Software developer</p>
                 </div>
               </div>
 
@@ -139,20 +130,19 @@ const AboutSection = () => {
                   <p className="member__role">Boss assistant</p>
                 </div>
               </div>
+
+              <div className="member__card">
+                <div className="member__image">
+                  <img src="" alt="member image" className="member__img" />
+                </div>
+
+                <div className="member__data">
+                  <h3 className="member__name">Amine Elkhalidy</h3>
+                  <p className="member__role">Web developer</p>
+                </div>
+              </div>
             </div>
-          </section>
-          {/* {PERSONS.map((person) => (
-          <PersonInfo
-            key={person.id}
-            image={person.image}
-            name={person.name}
-            description={person.description}
-            experienceYears={person.experienceYears}
-            completedProjectsNumber={person.completedProjectsNumber}
-            companiesNumber={person.companiesNumber}
-            linkToPortfolio={person.linkToPortfolio}
-          />
-        ))} */}
+          </div>
         </div>
       </section>
     </>
