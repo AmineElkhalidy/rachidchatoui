@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import FooterLogo from "../../assets/images/Logo.png";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__bg">
         <div className="footer__container grid container">
           <div>
-            <h1 className="footer__title">R3A</h1>
-            <span className="footer__subtitle">Products Business</span>
+            <img src={FooterLogo} alt="Footer logo" className="footer__logo" />
+            <br />
+            <span className="footer__subtitle">Qassab Products</span>
           </div>
 
           <ul className="footer__links">

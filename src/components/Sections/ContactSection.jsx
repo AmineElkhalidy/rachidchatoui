@@ -16,13 +16,13 @@ const ContactSection = () => {
 
             <div>
               <h3 className="contact__title">Call us</h3>
-              <span className="contact__subtitle">
-                +212611154307 &rarr; Amine
-              </span>{" "}
-              <br />
-              <span className="contact__subtitle">
+              <a href="tel:+212622334707" className="contact__subtitle">
                 +212622334707 &rarr; Rachid
-              </span>
+              </a>
+              <br />
+              <a href="tel:+212611154307" className="contact__subtitle">
+                +212611154307 &rarr; Amine
+              </a>
             </div>
           </div>
 
@@ -31,9 +31,12 @@ const ContactSection = () => {
 
             <div>
               <h3 className="contact__title">Email</h3>
-              <span className="contact__subtitle">
+              <a
+                href="mailto:elkhalidyamine.a@gmail.com"
+                className="contact__subtitle"
+              >
                 elkhalidyamine.a@gmail.com
-              </span>
+              </a>
             </div>
           </div>
 
@@ -42,9 +45,12 @@ const ContactSection = () => {
 
             <div>
               <h3 className="contact__title">Location</h3>
-              <span className="contact__subtitle">
-                Dr od khaled sidi aissa ben slimane - Elkelaa des sraghna
-              </span>
+              <a
+                href="https://www.google.com/maps/place/Sidi+Aissa+Ben+Slimane/@31.9229342,-7.224036,153m/data=!3m1!1e3!4m5!3m4!1s0xda51b973f7dcca5:0x3e0561f8d60b1205!8m2!3d31.9132874!4d-7.2113605"
+                className="contact__subtitle"
+              >
+                DR OD KHALED, SIDI AISSA BEN SLIMANE
+              </a>
             </div>
           </div>
         </div>

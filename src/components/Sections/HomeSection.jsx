@@ -17,8 +17,6 @@ import Product2 from "../../assets/products/product-01.png";
 import Product3 from "../../assets/products/product-02.png";
 import Product4 from "../../assets/products/product-03.png";
 
-import StoryImg from "../../assets/images/elqassab-01.jpg";
-
 import Footer from "./Footer";
 
 const HomeSection = () => {

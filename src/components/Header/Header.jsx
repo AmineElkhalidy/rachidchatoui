@@ -80,7 +80,7 @@ const Header = () => {
     <header className="header" id="header">
       <nav className="nav container">
         <Link to="/" className="nav__logo">
-          <img src={Logo} alt="Logo Image" /> R3A
+          <img src={Logo} alt="Logo Image" /> Qassab
         </Link>
 
         <div className="nav__menu" id="nav-menu">

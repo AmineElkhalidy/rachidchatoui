@@ -12,6 +12,7 @@ import Products from "./pages/Products";
 
 // Styling sheet
 import "./App.scss";
+import Footer from "./components/Sections/Footer";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
+
+        <Footer />
       </Router>
     </>
   );
