@@ -41,10 +41,6 @@ const Footer = () => {
             <a href="#" target="_blank" className="footer__social">
               <i class="ri-whatsapp-line"></i>
             </a>
-
-            <a href="#" target="_blank" className="footer__social">
-              <i class="ri-instagram-line"></i>
-            </a>
           </div>
         </div>
 

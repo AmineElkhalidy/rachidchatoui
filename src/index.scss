@@ -642,10 +642,18 @@ button {
   color: var(--text-color-light);
 }
 
+.contact__subtitle:hover {
+  color: var(--first-color-alt);
+}
+
 .contact__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact__content:hover {
+  border: 1px solid var(--first-color-alt);
 }
 
 .contact__label {
