@@ -7,7 +7,6 @@ const Header = () => {
     showMenu();
     removeMenu();
     themeChanger();
-    // window.addEventListener("scroll", scrollHeader);
   }, []);
 
   const showMenu = () => {
@@ -37,12 +36,6 @@ const Header = () => {
     }
     navLink.forEach((n) => n.addEventListener("click", linkAction));
   };
-
-  // const scrollHeader = () => {
-  //   const nav = document.getElementById("header");
-  //   if (this.scrollY >= 80) nav.classList.add("scroll-header");
-  //   else nav.classList.remove("scroll-header");
-  // };
 
   const themeChanger = () => {
     const themeButton = document.getElementById("theme-button");
@@ -94,12 +87,6 @@ const Header = () => {
           <ul className="nav__list grid">
             <li className="nav__item">
               <Link to="/" className="nav__link">
-                <i className="ri-home-2-line nav__icon"></i> Home
-              </Link>
-            </li>
-
-            <li className="nav__item">
-              <Link to="/products" className="nav__link">
                 <i className="ri-shopping-cart-2-line nav__icon"></i> Products
               </Link>
             </li>
