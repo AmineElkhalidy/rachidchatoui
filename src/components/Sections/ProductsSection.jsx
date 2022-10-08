@@ -72,7 +72,7 @@ const ProductsSection = () => {
                     </a>
 
                     <a
-                      href="https://wa.me/+212622334707"
+                      href="https://wa.me/212622334707"
                       className="product__link"
                     >
                       <span className="product__link-circle">

@@ -43,7 +43,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="tel:+212622334707"
+              href="https://wa.me/212622334707"
               target="_blank"
               className="footer__social"
             >
