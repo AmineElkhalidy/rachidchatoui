@@ -13,25 +13,23 @@ import Product9 from "../../assets/products/product-09.png";
 import Product10 from "../../assets/products/product-10.png";
 import Product11 from "../../assets/products/product-11.png";
 import Product12 from "../../assets/products/product-12.png";
-import Product13 from "../../assets/products/product-13.png";
-import Product14 from "../../assets/products/product-14.png";
+import Product13 from "../../assets/products/product-14.png";
 
 const productImages = [
-  Product0,
-  Product1,
-  Product2,
-  Product3,
-  Product4,
-  Product5,
-  Product6,
-  Product7,
-  Product8,
-  Product9,
-  Product10,
-  Product11,
-  Product12,
-  Product13,
-  Product14,
+  { image: Product0 },
+  { image: Product1 },
+  { image: Product2 },
+  { image: Product3 },
+  { image: Product4 },
+  { image: Product5 },
+  { image: Product6 },
+  { image: Product7 },
+  { image: Product8 },
+  { image: Product9 },
+  { image: Product10 },
+  { image: Product11 },
+  { image: Product12 },
+  { image: Product13 },
 ];
 
 // MetaTags
@@ -54,11 +52,11 @@ const ProductsSection = () => {
         <h2 className="section__title">Our Products</h2>
 
         <div className="products__container container grid">
-          {productImages.map((i, product) => {
+          {productImages.map((product) => {
             return (
               <article className="product">
                 <img
-                  src={product[i]}
+                  src={product.image}
                   alt="The product"
                   className="product__img"
                   width="100%"
@@ -68,14 +66,18 @@ const ProductsSection = () => {
                 <div className="product__links">
                   <div>
                     <a href="tel:+212622334707" className="product__link">
-                      <i class="ri-phone-line"></i>
+                      <span className="product__link-circle">
+                        <i class="ri-phone-line"></i>
+                      </span>
                     </a>
 
                     <a
                       href="https://wa.me/+212622334707"
                       className="product__link"
                     >
-                      <i class="ri-whatsapp-line"></i>
+                      <span className="product__link-circle">
+                        <i class="ri-whatsapp-line"></i>
+                      </span>
                     </a>
                   </div>
                 </div>

@@ -359,6 +359,10 @@ button {
   padding: 0.5rem;
   transition: 0.3s;
   overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .product__links {
@@ -388,8 +392,23 @@ button {
   font-size: 1.8rem;
 }
 
-.product__link i {
-  color: var(--first-color-alt);
+.product__link-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--first-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__link-circle:hover {
+  background-color: var(--first-color-alt);
+}
+
+.product__link {
+  color: whitesmoke;
 }
 
 .product:hover .product__links {
