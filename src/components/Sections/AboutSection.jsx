@@ -4,6 +4,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 import Amine from "../../assets/images/Amine.png";
+import Rachid from "../../assets/images/rachid.png";
+import Ayoub from "../../assets/images/ayoub.png";
 import Signature from "../../assets/signature.svg";
 
 const AboutSection = () => {
@@ -113,7 +115,11 @@ const AboutSection = () => {
             <div className="team__container grid">
               <div className="member__card">
                 <div className="member__image">
-                  <img src="" alt="member image" className="member__img" />
+                  <img
+                    src={Rachid}
+                    alt="member image"
+                    className="member__img"
+                  />
                 </div>
 
                 <div className="member__data">
@@ -135,7 +141,7 @@ const AboutSection = () => {
 
               <div className="member__card">
                 <div className="member__image">
-                  <img src="" alt="member image" className="member__img" />
+                  <img src={Ayoub} alt="member image" className="member__img" />
                 </div>
 
                 <div className="member__data">
