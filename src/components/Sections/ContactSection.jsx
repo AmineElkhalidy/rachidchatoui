@@ -139,6 +139,7 @@ const ContactSection = () => {
                 type="text"
                 className="contact__input"
                 required
+                style={{ resize: "none" }}
               />
               <ValidationError
                 prefix="Message"
