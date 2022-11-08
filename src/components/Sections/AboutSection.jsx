@@ -130,17 +130,6 @@ const AboutSection = () => {
 
               <div className="member__card">
                 <div className="member__image">
-                  <img src="" alt="member image" className="member__img" />
-                </div>
-
-                <div className="member__data">
-                  <h3 className="member__name">Ahmed Elfahimy</h3>
-                  <p className="member__role">Boss assistant</p>
-                </div>
-              </div>
-
-              <div className="member__card">
-                <div className="member__image">
                   <img src={Ayoub} alt="member image" className="member__img" />
                 </div>
 
