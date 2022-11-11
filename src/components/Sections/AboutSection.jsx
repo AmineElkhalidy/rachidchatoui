@@ -146,7 +146,7 @@ const AboutSection = () => {
 
                 <div className="member__data">
                   <h3 className="member__name">Amine Elkhalidy</h3>
-                  <p className="member__role">Software developer</p>
+                  <p className="member__role">Front-End dev</p>
                 </div>
               </div>
             </div>
