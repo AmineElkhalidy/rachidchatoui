@@ -11,13 +11,18 @@ import Products from "./pages/Products";
 
 // Styling sheet
 import "./App.scss";
+
+// Footer component
 import Footer from "./components/Sections/Footer";
 
 function App() {
   return (
     <>
       <Router>
+        {/* Header */}
         <Header />
+
+        {/* Main */}
         <main className="main">
           <Routes>
             <Route path="/" element={<Products />} />
@@ -26,6 +31,7 @@ function App() {
           </Routes>
         </main>
 
+        {/* Footer */}
         <Footer />
       </Router>
     </>

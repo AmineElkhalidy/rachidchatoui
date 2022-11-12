@@ -1,4 +1,6 @@
 import React from "react";
+
+// About component
 import AboutSection from "../components/Sections/AboutSection";
 
 const About = () => {

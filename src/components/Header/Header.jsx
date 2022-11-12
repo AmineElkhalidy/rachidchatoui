@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
+
+// Link
 import { Link } from "react-router-dom";
+
+// Logo
 import Logo from "../../assets/images/Logo.png";
 
 const Header = () => {
@@ -9,6 +13,7 @@ const Header = () => {
     themeChanger();
   }, []);
 
+  // Show menu
   const showMenu = () => {
     const navMenu = document.getElementById("nav-menu"),
       navToggle = document.getElementById("nav-toggle"),
@@ -26,6 +31,7 @@ const Header = () => {
     }
   };
 
+  // Hide menu
   const removeMenu = () => {
     const navLink = document.querySelectorAll(".nav__link");
 
@@ -37,6 +43,7 @@ const Header = () => {
     navLink.forEach((n) => n.addEventListener("click", linkAction));
   };
 
+  // Change theme
   const themeChanger = () => {
     const themeButton = document.getElementById("theme-button");
     const darkTheme = "dark-theme";

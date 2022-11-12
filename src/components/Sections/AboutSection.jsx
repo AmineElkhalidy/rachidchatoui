@@ -3,6 +3,7 @@ import React from "react";
 // MetaTags
 import { Helmet } from "react-helmet";
 
+// Team images
 import Amine from "../../assets/images/Amine.png";
 import Rachid from "../../assets/images/rachid.png";
 import Ayoub from "../../assets/images/ayoub.png";

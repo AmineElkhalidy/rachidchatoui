@@ -1,10 +1,13 @@
 import React from "react";
+
+// Form spree
 import { useForm, ValidationError } from "@formspree/react";
 
 // MetaTags
 import { Helmet } from "react-helmet";
 
 const ContactSection = () => {
+  // Form state
   const [state, handleSubmit] = useForm("mjvlwowe");
 
   return (
@@ -17,6 +20,7 @@ const ContactSection = () => {
 
         <title>Contact Us</title>
       </Helmet>
+
       <section className="contact section">
         <span className="section__subtitle">Get in touch</span>
         <h2 className="section__title">Contact us</h2>
